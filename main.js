@@ -1,8 +1,8 @@
-// let num1 = +prompt('Введите первое число')
-// let num2 = +prompt('Введите второе число')
+let num1 = +prompt('Введите первое число')
+let num2 = +prompt('Введите второе число')
 
 // let ans = alert(num1 + num2) // нахождение суммы
-// let avg = alert((num1 + num2)/2) // среднее арифметическое
+let avg = alert((num1 + num2)/2) // среднее арифметическое
 // let sqrt = alert((num1**2 + num2**2)/2) //среднее арифметическое их квадратов
 
 
@@ -27,7 +27,7 @@ function calc(){
     }else if(sign === '/'){
         result.innerHTML = Number(num1) / Number(num2)
     }
+    return;
+    
 }
-
-
 
