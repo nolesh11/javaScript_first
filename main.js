@@ -33,144 +33,97 @@
 
 // дз 2
 
-// let new_array = [1, 2, 3, 4]
+let new_array = [1, 2, 3, 4]
 
 
-// function sum (value) {
-//     let sum1 = 0
-//     for ( i = 0; i < new_array.length; i++) {
-//         sum1 += value[i]
-//     }
-//     return sum1
-// }
-
-// let answer = sum(new_array)
-// console.log(answer);
-
-// function multy (value1) {
-//     let sum2 = 1
-//     for ( i = 0; i < new_array.length; i++) {
-//         sum2 *= value1[i]
-//     }
-//     return sum2
-// }
-
-// let result = multy(new_array)
-// console.log(result);
-
-// let even = []
-// let odd = []
-
-// for(i = 0; i < new_array.length; i++){
-//     if((new_array[i] % 2) == 0 ){
-//         even.push(new_array[i])
-//     } else {
-//         odd.push(new_array[i])
-//     }
-// }
-
-// console.log(even);
-// console.log(odd);
-
-
-// let unic = []
-
-// let random = [1,1,2,2,2,3,3,3,4,4,4,5,5,6,6]
-
-// function uniq(value, index, array) {
-//     return array.indexOf(value) === index
-// }
-// let uniqe = random.filter(uniq)
-
-// console.log(uniqe);
-
-
-// let numbers = [1, 3,4,6,-4,-65, 54,-45,44,-4]
-// let positive = []
-// let negative = []
-
-// for(i = 0; i < numbers.length; i++){
-//     if((numbers[i]) > 0) {
-//         positive.push(numbers[i])
-//     } else {
-//         negative.push(numbers[i])
-//     }
-// }
-
-// console.log(positive);
-// console.log(negative);
-
-// let big = []
-// let small = []
-
-// for(i = 0; i < numbers.length; i++) {
-//     if((numbers[i]) > 39) {
-//         big.push(numbers[i])
-//     } else {
-//         small.push(numbers[i])
-//     }
-// }
-
-// console.log(big);
-// console.log(small);
-
-// let even_num = []
-
-
-// for(i = 0; i < numbers.length; i++){
-//     if((i % 2) == 0) {
-//         even_num.push(numbers[i])
-//     }
-// }
-
-// console.log(even_num);
-
-
-
-// дз 
-
-// первое задание
-
-document.getElementById('btn').addEventListener('click', function() {
-    let phone = document.getElementById('number').value
-    let error = document.getElementById('error')
-    let user_name = document.getElementById('user_name').value
-    if(phone.startsWith('+998')){
-        alert(`Пользователь ${user_name} успешно зареган`)
-        
-    }else {
-        error.textContent = 'Введен неверный формат номера телефона'
+function sum (value) {
+    let sum1 = 0
+    for ( i = 0; i < new_array.length; i++) {
+        sum1 += value[i]
     }
-    
-})
+    return sum1
+}
 
-// let input_tel = document.getElementById('number')
+let answer = sum(new_array)
+console.log(answer);
 
-// input_tel.onclick = function () {
-//     input_tel.value = '+'
-// }
+function multy (value1) {
+    let sum2 = 1
+    for ( i = 0; i < new_array.length; i++) {
+        sum2 *= value1[i]
+    }
+    return sum2
+}
 
-// let start = 0
+let result = multy(new_array)
+console.log(result);
 
-// input_tel.addEventListener('keydown', function () {
-//     let length = input_tel.value.length
+let even = []
+let odd = []
 
-//     if(length == 4) {
-//         input_tel.value = input_tel.value + ' (';
-//     }
-//     if(length == 8) {
-//         input_tel.value = input_tel.value + ') ';
-//     }
-//     if(length == 13) {
-//         input_tel.value = input_tel.value + '-';
-//     }
-//     if(length == 16) {
-//         input_tel.value = input_tel.value + '-';
-//     }
-//     if (length > 18){
-//     	input_tel.value = input_tel.value.substring(0, input_tel.value.length - 1);
-//     }
+for(i = 0; i < new_array.length; i++){
+    if((new_array[i] % 2) == 0 ){
+        even.push(new_array[i])
+    } else {
+        odd.push(new_array[i])
+    }
+}
 
-//     length++
-    
-// })
+console.log(even);
+console.log(odd);
+
+
+let unic = []
+
+let random = [1,1,2,2,2,3,3,3,4,4,4,5,5,6,6]
+
+function uniq(value, index, array) {
+    return array.indexOf(value) === index
+}
+let uniqe = random.filter(uniq)
+
+console.log(uniqe);
+
+
+let numbers = [1, 3,4,6,-4,-65, 54,-45,44,-4]
+let positive = []
+let negative = []
+
+for(i = 0; i < numbers.length; i++){
+    if((numbers[i]) > 0) {
+        positive.push(numbers[i])
+    } else {
+        negative.push(numbers[i])
+    }
+}
+
+console.log(positive);
+console.log(negative);
+
+let big = []
+let small = []
+
+for(i = 0; i < numbers.length; i++) {
+    if((numbers[i]) > 39) {
+        big.push(numbers[i])
+    } else {
+        small.push(numbers[i])
+    }
+}
+
+console.log(big);
+console.log(small);
+
+let even_num = []
+
+
+for(i = 0; i < numbers.length; i++){
+    if((i % 2) == 0) {
+        even_num.push(numbers[i])
+    }
+}
+
+console.log(even_num);
+
+
+
